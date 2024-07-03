@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import {
+  ClerkProvider,
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,16 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-
-
-    <html lang="en">
-      <body>
-        
-        <header>
-     
-        </header>
-        {children}</body>
-    </html>
+      <html lang="en">
+        <body className="flex min-h-screen">{children}</body>
+      </html>
     </ClerkProvider>
   );
 }

@@ -15,7 +15,7 @@ function Header() {
         />
         <div  className=' space-y-2 pl-4'>
 
-        <h1>Assistantist</h1>
+        <h1>Assistantists</h1>
         <h2 className='text-sm'>Train your AI</h2>
         
         </div>

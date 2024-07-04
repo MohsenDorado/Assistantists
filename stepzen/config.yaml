@@ -1,0 +1,4 @@
+configurationset:
+  - configuration:
+      name: postgresql_config
+      uri: postgresql://ep-little-wind-a5dah34l.us-east-2.aws.neon.tech/Assistantlists?user=Assistantlists_owner&password=ovsJ1M9gTRrc

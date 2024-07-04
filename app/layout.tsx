@@ -8,6 +8,7 @@ import {
   SignInButton,
   UserButton,
 } from "@clerk/nextjs";
+import AppoloProviderWrapper from "@/components/ApolloProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body className="flex min-h-screen">{children}</body>
-      </html>
-    </ClerkProvider>
+    <AppoloProviderWrapper>
+      <ClerkProvider>
+        <html lang="en">
+          <body className="flex min-h-screen">{children}</body>
+        </html>
+      </ClerkProvider>
+    </AppoloProviderWrapper>
   );
 }
